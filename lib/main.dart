@@ -39,26 +39,28 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         children: <Widget>[
-         
           SizedBox(
             height: MediaQuery.of(context).size.width / 2.5,
             width: double.infinity,
             // width: MediaQuery.of(context).size.width,
             child: SliderCarousel1(),
           ),
-           SizedBox(
+          SizedBox(
             height: 10,
           ),
           Container(
             height: 170.0,
             child: Carousel(
               boxFit: BoxFit.cover,
-              dotColor: Colors.transparent,
+              dotColor: Colors.white,
+              autoplay: true,
+              radius: Radius.circular(50),
               dotSize: 5.5,
               dotSpacing: 16.0,
               dotBgColor: Colors.transparent,
-              showIndicator: false,
+              showIndicator: true,
               overlayShadow: false,
+              
               overlayShadowColors: Colors.white.withOpacity(0.9),
               overlayShadowSize: 0.9,
               images: [
